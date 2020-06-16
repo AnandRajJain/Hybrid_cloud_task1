@@ -71,8 +71,6 @@ resource "aws_instance" "new" {
 
 // Creating Key
 
-
-
 resource "tls_private_key" "key1" {
 
  algorithm = "RSA"
@@ -105,8 +103,6 @@ resource "aws_key_pair" "key3" {
 
 // Store public IP in .txt file
 
-
-
 resource "null_resource" "nulllocal2"  {
 
 	provisioner "local-exec" {
@@ -122,8 +118,6 @@ resource "null_resource" "nulllocal2"  {
 
 
 // Attaching the EBS volume
-
-
 
 resource "aws_volume_attachment" "vol_attach" {
 
@@ -153,8 +147,6 @@ resource "aws_ebs_volume" "volu" {
 
 // Creating s3 bucket
 
-
-
 resource "aws_s3_bucket" "mybucket" {
 
   bucket = "rk18-bucket"
@@ -176,8 +168,6 @@ resource "aws_s3_bucket" "mybucket" {
 
 
 // Uploding image to bucket
-
-
 
 resource "aws_s3_bucket_object" "object" {
 
@@ -204,8 +194,6 @@ resource "aws_s3_bucket_object" "object" {
 
 
 // Creating CloudFront
-
-
 
 resource "aws_cloudfront_distribution" "allow-cloudfront" {
 
