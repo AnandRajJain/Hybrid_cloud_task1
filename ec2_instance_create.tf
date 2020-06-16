@@ -4,7 +4,7 @@ provider "aws" {
 
 region   = "ap-south-1"
 
-profile  = "dinesh97"
+profile  = "AnandRajJain"
 
 }
 
@@ -286,7 +286,7 @@ provisioner "remote-exec" {
 
       "sudo rm -rf /var/www/html/*",
 
-      "sudo git clone https://github.com/dineshcode97/cloudtask1.git /var/www/html/"
+      "sudo git clone https://github.com/AnandRajJain/Hybrid_cloud_task1.git /var/www/html/"
 
     ]
 
